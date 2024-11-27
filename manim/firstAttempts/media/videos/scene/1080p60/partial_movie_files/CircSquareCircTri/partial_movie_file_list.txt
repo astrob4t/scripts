@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/abelf/Development/scripts/manim/project/media/videos/scene/1080p60/partial_movie_files/CircSquareCircTri/3977891868_3451833940_4272345035.mp4'
+file 'file:C:/Users/abelf/Development/scripts/manim/project/media/videos/scene/1080p60/partial_movie_files/CircSquareCircTri/2852726489_2523213264_3256495558.mp4'
+file 'file:C:/Users/abelf/Development/scripts/manim/project/media/videos/scene/1080p60/partial_movie_files/CircSquareCircTri/2852726489_3023778027_4272345035.mp4'
+file 'file:C:/Users/abelf/Development/scripts/manim/project/media/videos/scene/1080p60/partial_movie_files/CircSquareCircTri/2852726489_712959049_1195610493.mp4'
