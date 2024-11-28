@@ -19,8 +19,7 @@ class DifferentRotations(Scene):
         left_square = Square(color=BLUE, fill_opacity=0.7).shift(2 * LEFT)
         right_square = Square(color=GREEN, fill_opacity=0.7).shift(2 * RIGHT)
         self.play(
-            left_square.animate.rotate(PI), Rotate(right_square, angle=PI), run_time=2
-        )
+            left_square.animate.rotate(PI), Rotate(right_square, angle=PI), run_time=2)
         self.wait()
 
 class TwoTransforms(Scene):
@@ -29,6 +28,7 @@ class TwoTransforms(Scene):
         b = Square()
         c = Triangle()
         self.play(Transform(a, b))
+        Rotate(b, angle = 45, run_time = 2)
         self.play(Transform(a, c))
         self.play(FadeOut(a))
 
