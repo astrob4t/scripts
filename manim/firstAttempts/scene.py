@@ -47,10 +47,10 @@ class TwoTransforms(Scene):
 
 class CircSquareCircTri(Scene):
     def trans(self):
-        a = Circle(color=PURPLE)
-        b = Square(color=BLUE)
-        c = Circle(color=PURPLE_A)
-        d = Triangle(color=RED)
+        a = Circle()
+        b = Square()
+        c = Circle()
+        d = Triangle()
         self.play(ReplacementTransform(a, b))
         self.play(ReplacementTransform(b, c))
         self.play(ReplacementTransform(c, d))
@@ -58,3 +58,26 @@ class CircSquareCircTri(Scene):
 
     def construct(self):
         self.trans()
+
+class TextTesting(Scene):
+    def perfectHatred(self):
+        # Preload Shapes
+        s1 = Circle(color=PURE_RED)
+        s2 = Square(color=PURE_BLUE)
+        t1 = Text('Perfect', color = '#8000FF')
+        t2 = Text('Hatred', color = '#8000FF')
+
+        # Positioning
+        s2.next_to(s1, LEFT)
+        s1.shift(RIGHT)
+        t1.shift(2*LEFT)
+        t2.shift(2*RIGHT)
+
+        # Run the animation
+        self.play(Create(s1), Create(s2))
+        self.play(Transform(s1, t1), Transform(s2, t2))
+
+    # Run the previous function
+    def construct(self):
+        self.perfectHatred()
+        self.wait(0.5)
