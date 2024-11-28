@@ -70,8 +70,8 @@ class TextTesting(Scene):
         # Positioning
         s2.next_to(s1, LEFT)
         s1.shift(RIGHT)
-        t1.shift(2*LEFT)
-        t2.shift(2*RIGHT)
+        t1.shift(1.25*LEFT)
+        t2.shift(1.25*RIGHT)
 
         # Run the animation
         self.play(Create(s1), Create(s2))
