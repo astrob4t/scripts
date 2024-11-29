@@ -81,3 +81,29 @@ class TextTesting(Scene):
     def construct(self):
         self.perfectHatred()
         self.wait(0.5)
+
+class TextShapeText(Scene):
+    def Test(self):
+        # Preload Shapes and Text
+        t1 = Text('Perfect', color = PURE_RED)
+        t2 = Text('Hatred', color = PURE_BLUE)
+        t2.shift(1.25*RIGHT)
+
+        # Run the animations
+        self.play(
+            Create(t1)
+        )
+        self.play(
+            t1.animate.shift(1.25*LEFT),
+        )
+        self.play(
+            Create(t2)
+        )
+        self.play(
+            FadeToColor(t1, '#8000FF'),
+            FadeToColor(t2, '#8000FF')
+        )
+
+    def construct(self):
+        self.Test()
+        self.wait(0.5)

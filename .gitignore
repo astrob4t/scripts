@@ -1,4 +1,4 @@
-manim/firstAttempts/__pycache__/
-.vscode/
-manim\firstAttempts\media\images
-manim\firstAttempts\media\texts
+manim\firstAttempts\__pycache__\
+.vscode\
+manim\firstAttempts\media\images\
+manim\firstAttempts\media\texts\
