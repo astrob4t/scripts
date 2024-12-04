@@ -15,7 +15,7 @@ rolled = (random.uniform(0, 100))
 
 if rolled > percent:
     tprint('You Lost :(')
-    print ('one coffee for you')
+    print ('one *lonely* coffee for you')
     time.sleep (0.75)
     aprint ('coffee', number = 1, space = 0)
     print (rolled, '>', percent)
