@@ -8,6 +8,6 @@ I am new to programming so if there are any edits you would like to make to the 
 ## Recommended stuff to install and where to find them (other than the base programming languages)
 
 ### pip
-manim
+manim <br>
 art
 
